@@ -1,0 +1,1 @@
+export const PHONE_NUMBER = '+38 (067) 123-45-67';
