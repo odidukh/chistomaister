@@ -1,7 +1,7 @@
 import React from 'react';
 
 const HEADER_MENU_ITEMS = [
-    { id: 'services', name: 'Послуги', link: '/' },
+    { id: 'services', name: 'Послуги', link: '/services' },
     { id: 'about', name: 'Про нас', link: '/about' },
     { id: 'photos', name: 'Фото', link: '/photos' },
     { id: 'prices', name: 'Ціни', link: '/prices' },

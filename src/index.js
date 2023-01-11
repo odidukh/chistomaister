@@ -20,7 +20,7 @@ const router = createBrowserRouter([
         errorElement: <NotFound />,
         children: [
             {
-                path: '/services',
+                path: 'services',
                 element: <Services />,
             },
             {

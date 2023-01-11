@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import MainLogo from '../assets/white_logo_transparent_background.png';
+import MainLogo from '../assets/pictures/white_logo_transparent_background.png';
 
 function HeaderLogo() {
     const navigate = useNavigate();
