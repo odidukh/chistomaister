@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && git add -A && git commit -m 'update build and deploy' && git push origin main",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
