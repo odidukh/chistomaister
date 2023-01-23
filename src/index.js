@@ -12,6 +12,7 @@ import Services from './pages/Services';
 import Prices from './pages/Prices';
 import Reviews from './pages/Reviews';
 import NotFound from './pages/NotFound';
+import './i18n'
 
 const router = createBrowserRouter([
     {
@@ -38,10 +39,6 @@ const router = createBrowserRouter([
             {
                 path: '/photos',
                 element: <Photos />,
-            },
-            {
-                path: '/services',
-                element: <Services />,
             },
             {
                 path: '/prices',
