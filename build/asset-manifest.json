@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.089605bc.css",
-    "main.js": "/static/js/main.c68b4183.js",
+    "main.css": "/static/css/main.edd994d9.css",
+    "main.js": "/static/js/main.980d9241.js",
     "static/js/787.9e25d05d.chunk.js": "/static/js/787.9e25d05d.chunk.js",
+    "static/media/blue-cushions-one-yellow-cushion.jpg": "/static/media/blue-cushions-one-yellow-cushion.3baeb36b91630534a14a.jpg",
     "static/media/white_logo_transparent_background.png": "/static/media/white_logo_transparent_background.2b57045db929aab514d4.png",
     "index.html": "/index.html",
-    "main.089605bc.css.map": "/static/css/main.089605bc.css.map",
-    "main.c68b4183.js.map": "/static/js/main.c68b4183.js.map",
+    "main.edd994d9.css.map": "/static/css/main.edd994d9.css.map",
+    "main.980d9241.js.map": "/static/js/main.980d9241.js.map",
     "787.9e25d05d.chunk.js.map": "/static/js/787.9e25d05d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.089605bc.css",
-    "static/js/main.c68b4183.js"
+    "static/css/main.edd994d9.css",
+    "static/js/main.980d9241.js"
   ]
 }
