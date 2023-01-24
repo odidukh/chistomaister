@@ -5,8 +5,9 @@ import { COMPANY_NAME } from '../constants';
 import Nav from 'react-bootstrap/Nav';
 import { useTranslation } from 'react-i18next';
 import { PHONE_NUMBER } from '../constants';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
-function BrandExample() {
+function CustomNavbar() {
     const { t } = useTranslation('translation');
     return (
         <>
@@ -36,7 +37,27 @@ function BrandExample() {
                         </span>
                     </Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link href="/services">{t('services')}</Nav.Link>
+                        <NavDropdown title={t('services')} id="nav-dropdown">
+                            <NavDropdown.Item href="/services/couch-cleaning">
+                                {t('couch-cleaning')}
+                            </NavDropdown.Item>
+                            <NavDropdown.Item href="/services/carpet-cleaning">
+                                {t('carpet-cleaning')}
+                            </NavDropdown.Item>
+                            <NavDropdown.Item href="/services/upholstery-cleaning">
+                                {t('upholstery-cleaning')}
+                            </NavDropdown.Item>
+                            <NavDropdown.Item href="/services/leather-cleaning">
+                                {t('leather-cleaning')}
+                            </NavDropdown.Item>
+                            <NavDropdown.Item href="/services/mattress-cleaning">
+                                {t('mattress-cleaning')}
+                            </NavDropdown.Item>
+                            <NavDropdown.Item href="/services/car-cleaning">
+                                {t('car-cleaning')}
+                            </NavDropdown.Item>
+                        </NavDropdown>
+
                         <Nav.Link href="/about">{t('about')}</Nav.Link>
                         <Nav.Link href="/contacts">{t('contacts')}</Nav.Link>
                         <Nav.Link href="/blog">{t('blog')}</Nav.Link>
@@ -57,4 +78,4 @@ function BrandExample() {
     );
 }
 
-export default BrandExample;
+export default CustomNavbar;
