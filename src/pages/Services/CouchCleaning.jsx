@@ -1,16 +1,14 @@
 import { Button } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 
 const CouchCleaning = () => {
+    const { t } = useTranslation();
     return (
         <div className="couch-cleaning-container">
             <div className="couch-cleaning-container-content">
-                <h1>Dry cleaning at your home</h1>
-                <p>
-                    Supporting cleaning of delicate and expensive couches, and
-                    also dry cleaning really dirty furniture from spots, stains,
-                    dust, and unpleaseant smells.
-                </p>
-                <Button>Calculate price</Button>
+                <h1>{t('couch_cleaning_header')}</h1>
+                <p>{t('couch_cleaning_description')}</p>
+                <Button size="lg">{t('couch_cleaning_button')}</Button>
             </div>
         </div>
     );
