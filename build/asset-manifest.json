@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.280068d5.css",
-    "main.js": "/static/js/main.96a1a051.js",
+    "main.css": "/static/css/main.9a05fd4d.css",
+    "main.js": "/static/js/main.76a3da9c.js",
     "static/js/787.9e25d05d.chunk.js": "/static/js/787.9e25d05d.chunk.js",
     "static/media/blue-cushions-one-yellow-cushion.jpg": "/static/media/blue-cushions-one-yellow-cushion.3baeb36b91630534a14a.jpg",
     "static/media/white_logo_transparent_background.png": "/static/media/white_logo_transparent_background.2b57045db929aab514d4.png",
     "index.html": "/index.html",
-    "main.280068d5.css.map": "/static/css/main.280068d5.css.map",
-    "main.96a1a051.js.map": "/static/js/main.96a1a051.js.map",
+    "main.9a05fd4d.css.map": "/static/css/main.9a05fd4d.css.map",
+    "main.76a3da9c.js.map": "/static/js/main.76a3da9c.js.map",
     "787.9e25d05d.chunk.js.map": "/static/js/787.9e25d05d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.280068d5.css",
-    "static/js/main.96a1a051.js"
+    "static/css/main.9a05fd4d.css",
+    "static/js/main.76a3da9c.js"
   ]
 }
