@@ -4,7 +4,7 @@ import BrandIcon from '../assets/pictures/white_logo_transparent_background.png'
 import { COMPANY_NAME } from '../constants';
 import Nav from 'react-bootstrap/Nav';
 import { useTranslation } from 'react-i18next';
-import { PHONE_NUMBER } from '../constants';
+import { COMPANY_PHONE_NUMBER } from '../constants';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function CustomNavbar() {
@@ -67,8 +67,11 @@ function CustomNavbar() {
                     </Nav>
                     <Navbar.Collapse className="justify-content-end">
                         <Navbar.Text>
-                            <a href={`tel: ${PHONE_NUMBER}`} type="phone">
-                                {PHONE_NUMBER}
+                            <a
+                                href={`tel: ${COMPANY_PHONE_NUMBER}`}
+                                type="phone"
+                            >
+                                {COMPANY_PHONE_NUMBER}
                             </a>
                         </Navbar.Text>
                     </Navbar.Collapse>

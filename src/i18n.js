@@ -102,6 +102,37 @@ const resources = {
             couch_cleaning_process_step_6:
                 'Ополіскування, розчісування тканини (у разі потреби)',
             couch_cleaning_process_step_6_description: `Деякі делікатні та натуральні тканини потрібно обов'язково промивати ополіскувачем, щоб вони були ніжними та приємними на дотик.`,
+            
+            // Contact page
+            where_we_work_header: 'Де ми працюємо',
+            where_we_work_description: `Ми працюємо по всьому Тальнівському району, а також сусідніх районах. Якщо Ви не знаєте, чи ми працюємо у Вашому населеному пункті, зателефонуйте нам і ми Вам розкажемо.`,
+
+            order_cleaning_header: 'Замовте хімчистку у кращого Майстра Чистоти!',
+            
+            email_address: 'Ваша електронна пошта',
+            enter_your_email: 'Введіть Вашу електронну пошту',
+            phone_number: 'Ваш номер телефону',
+            enter_your_phone_number: 'Введіть Ваш номер телефону',
+            your_name: 'Ваше ім\'я',
+            enter_your_name: 'Введіть Ваше ім\'я',
+            your_message: 'Ваше повідомлення',
+
+            send_message: 'Надіслати повідомлення',
+
+            contact_info_header: 'Наші контакти',
+            our_address: 'Наша адреса',
+            bussiness_address: 'місто Тальне, Звенигородський район, Черкаська область, Україна',
+            our_phone_number: 'Наш номер телефону',
+            our_email_address: 'Наша електронна пошта',
+
+            question_button: 'Залишились питання?',
+            order_cleaning_button: 'Замовити',
+            close_button: 'Закрити',
+
+            order_cleaning_modal_header: 'Замовити хімчистку',
+            question_modal_header: 'Залишились питання?',
+
+            social_networks_header: 'Ми у соціальних мережах',
         },
     },
 };
