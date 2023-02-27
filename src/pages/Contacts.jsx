@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
-import { Button, Form, Modal } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 import {
     COMPANY_EMAIL,
@@ -9,28 +9,25 @@ import {
     COMPANY_VIBER_LINK,
     COMPANY_INSTAGRAM_LINK,
 } from '../constants';
-import { useState } from 'react';
+import OrderModal from '../components/OrderModal';
+import QuestionModal from '../components/QuestionModal';
+import useOrderModal from '../hooks/useOrderModal';
+import useQuestionModal from '../hooks/useQuestionModal';
 
 const Contacts = () => {
-    const [showOrderModal, setShowOrderModal] = useState(false);
-    const [showQuestionModal, setShowQuestionModal] = useState(false);
-
-    const handleOrderClose = () => setShowOrderModal(false);
-    const handleOrderShow = () => setShowOrderModal(true);
-
-    const handleQuestionClose = () => setShowQuestionModal(false);
-    const handleQuestionShow = () => setShowQuestionModal(true);
+    const { showOrderModal, handleOrderShow, handleOrderClose } =
+        useOrderModal();
+    const { showQuestionModal, handleQuestionShow, handleQuestionClose } =
+        useQuestionModal();
 
     const handleOrderSubmit = (e) => {
         e.preventDefault();
         handleOrderClose();
-        console.log('submit_order');
     };
 
     const handleQuestionSubmit = (e) => {
         e.preventDefault();
         handleQuestionClose();
-        console.log('submit_question');
     };
 
     const { t } = useTranslation();
@@ -74,119 +71,17 @@ const Contacts = () => {
                         {t('question_button')}
                     </Button>
                 </div>
-                <Modal
+
+                <OrderModal
                     show={showOrderModal}
-                    onHide={handleOrderClose}
-                    animation={true}
-                    onSubmit={handleOrderSubmit}
-                >
-                    <Modal.Header closeButton>
-                        <Modal.Title>
-                            {t('order_cleaning_modal_header')}
-                        </Modal.Title>
-                    </Modal.Header>
-                    <Modal.Body>
-                        <Form className="contact-form col-auto">
-                            <Form.Group controlId="formBasicEmail">
-                                <Form.Label>{t('email_address')}</Form.Label>
-                                <Form.Control
-                                    type="email"
-                                    placeholder={t('enter_your_email')}
-                                />
-                            </Form.Group>
-
-                            <Form.Group controlId="formBasicPhone">
-                                <Form.Label>{t('phone_number')}</Form.Label>
-                                <Form.Control
-                                    type="phone"
-                                    placeholder={t('enter_your_phone_number')}
-                                />
-                            </Form.Group>
-
-                            <Form.Group controlId="formBasicName">
-                                <Form.Label>{t('your_name')}</Form.Label>
-                                <Form.Control
-                                    type="name"
-                                    placeholder={t('enter_your_name')}
-                                />
-                            </Form.Group>
-                        </Form>
-                    </Modal.Body>
-                    <Modal.Footer>
-                        <Button variant="secondary" onClick={handleOrderClose}>
-                            {t('close_button')}
-                        </Button>
-                        <Button
-                            variant="primary"
-                            type="submit"
-                            size="lg"
-                            className="btn-block"
-                            onClick={handleOrderSubmit}
-                        >
-                            {t('order_cleaning_button')}
-                        </Button>
-                    </Modal.Footer>
-                </Modal>
-                <Modal
+                    handleClose={handleOrderClose}
+                    handleSubmit={handleOrderSubmit}
+                />
+                <QuestionModal
                     show={showQuestionModal}
-                    onHide={handleQuestionClose}
-                    animation={true}
-                >
-                    <Modal.Header closeButton>
-                        <Modal.Title>{t('question_modal_header')}</Modal.Title>
-                    </Modal.Header>
-                    <Modal.Body>
-                        <Form
-                            className="contact-form col-auto"
-                            onSubmit={handleQuestionSubmit}
-                        >
-                            <Form.Group controlId="formBasicEmail">
-                                <Form.Label>{t('email_address')}</Form.Label>
-                                <Form.Control
-                                    type="email"
-                                    placeholder={t('enter_your_email')}
-                                />
-                            </Form.Group>
-
-                            <Form.Group controlId="formBasicPhone">
-                                <Form.Label>{t('phone_number')}</Form.Label>
-                                <Form.Control
-                                    type="phone"
-                                    placeholder={t('enter_your_phone_number')}
-                                />
-                            </Form.Group>
-
-                            <Form.Group controlId="formBasicName">
-                                <Form.Label>{t('your_name')}</Form.Label>
-                                <Form.Control
-                                    type="name"
-                                    placeholder={t('enter_your_name')}
-                                />
-                            </Form.Group>
-
-                            <Form.Group controlId="formMessage">
-                                <Form.Label>{t('your_message')}</Form.Label>
-                                <Form.Control as="textarea" rows={5} />
-                            </Form.Group>
-                        </Form>
-                    </Modal.Body>
-                    <Modal.Footer>
-                        <Button
-                            variant="secondary"
-                            onClick={handleQuestionClose}
-                        >
-                            {t('close_button')}
-                        </Button>
-                        <Button
-                            variant="primary"
-                            type="submit"
-                            size="lg"
-                            className="btn-block"
-                        >
-                            {t('send_message')}
-                        </Button>
-                    </Modal.Footer>
-                </Modal>
+                    handleClose={handleQuestionClose}
+                    handleSubmit={handleQuestionSubmit}
+                />
             </div>
 
             <div className="contact-info-container">
@@ -222,7 +117,7 @@ const Contacts = () => {
                     </div>
                 </div>
             </div>
-            
+
             <div className="social-networks-container">
                 <h1>{t('social_networks_header')}</h1>
                 <div className="social-networks">
