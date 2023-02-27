@@ -57,7 +57,15 @@ const resources = {
     ua: {
         translation: {
             navbar: {
-                services: 'Послуги',
+                services: {
+                    name: 'Послуги',
+                    dropdownElements: {
+                        mattress: 'Хімчистка матраців',
+                        upholstery: 'Хімчистка меблів',
+                        car: 'Хімчистка авто',
+                        couch: 'Хімчистка диванів',
+                    },
+                },
                 about: 'Про нас',
                 contacts: 'Контакти',
                 blog: 'Блог',
@@ -65,13 +73,6 @@ const resources = {
                 prices: 'Ціни',
                 reviews: 'Відгуки',
             },
-
-            'carpet-cleaning': 'Хімчистка килимів',
-            'mattress-cleaning': 'Хімчистка матраців',
-            'upholstery-cleaning': 'Хімчистка меблів',
-            'car-cleaning': 'Хімчистка авто',
-            'couch-cleaning': 'Хімчистка диванів',
-            'leather-cleaning': 'Хімчистка шкіри',
 
             // Services
             services: {
@@ -113,26 +114,28 @@ const resources = {
             couch_cleaning_process_step_6:
                 'Ополіскування, розчісування тканини (у разі потреби)',
             couch_cleaning_process_step_6_description: `Деякі делікатні та натуральні тканини потрібно обов'язково промивати ополіскувачем, щоб вони були ніжними та приємними на дотик.`,
-            
+
             // Contact page
             where_we_work_header: 'Де ми працюємо',
             where_we_work_description: `Ми працюємо по всьому Тальнівському, а також сусідніх районах. Якщо Ви не знаєте, чи ми працюємо у Вашому населеному пункті, зателефонуйте нам і ми Вам розкажемо.`,
 
-            order_cleaning_header: 'Замовте хімчистку у кращого Майстра Чистоти!',
-            
+            order_cleaning_header:
+                'Замовте хімчистку у кращого Майстра Чистоти!',
+
             email_address: 'Ваша електронна пошта',
             enter_your_email: 'Введіть Вашу електронну пошту',
             phone_number: 'Ваш номер телефону',
             enter_your_phone_number: 'Введіть Ваш номер телефону',
-            your_name: 'Ваше ім\'я',
-            enter_your_name: 'Введіть Ваше ім\'я',
+            your_name: "Ваше ім'я",
+            enter_your_name: "Введіть Ваше ім'я",
             your_message: 'Ваше повідомлення',
 
             send_message: 'Надіслати повідомлення',
 
             contact_info_header: 'Наші контакти',
             our_address: 'Наша адреса',
-            bussiness_address: 'місто Тальне, Звенигородський район, Черкаська область, Україна',
+            bussiness_address:
+                'місто Тальне, Звенигородський район, Черкаська область, Україна',
             our_phone_number: 'Наш номер телефону',
             our_email_address: 'Наша електронна пошта',
 

@@ -7,59 +7,60 @@ import { useTranslation } from 'react-i18next';
 import { COMPANY_PHONE_NUMBER } from '../constants';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
+const SERVICES = [
+    {
+        name: 'couch',
+        link: '/services/couch-cleaning',
+        translationKey: 'navbar.services.dropdownElements.couch',
+    },
+    {
+        name: 'upholstery',
+        link: '/services/upholstery-cleaning',
+        translationKey: 'navbar.services.dropdownElements.upholstery',
+    },
+    {
+        name: 'mattress',
+        link: '/services/mattress-cleaning',
+        translationKey: 'navbar.services.dropdownElements.mattress',
+    },
+    {
+        name: 'car',
+        link: '/services/car-cleaning',
+        translationKey: 'navbar.services.dropdownElements.car',
+    },
+];
+
 function CustomNavbar() {
     const { t } = useTranslation('translation');
 
     return (
         <>
-            <Navbar bg="primary" variant="dark">
+            <Navbar bg="primary" variant="dark" className="navbar">
                 <Container>
-                    <Navbar.Brand
-                        href="/"
-                        style={{
-                            display: 'flex',
-                            flexDirection: 'row',
-                            gap: '0.7rem',
-                        }}
-                    >
+                    <Navbar.Brand href="/" className="navbar-brand">
                         <img
                             alt=""
                             src={BrandIcon}
                             height="45"
                             className="d-inline-block align-top"
                         />
-                        <span
-                            style={{
-                                display: 'flex',
-                                alignSelf: 'center',
-                            }}
-                        >
+                        <span className="navbar-brand-name">
                             {COMPANY_NAME}
                         </span>
                     </Navbar.Brand>
                     <Nav className="me-auto">
                         <NavDropdown
-                            title={t('navbar.services')}
+                            title={t('navbar.services.name')}
                             id="nav-dropdown"
                         >
-                            <NavDropdown.Item href="/services/couch-cleaning">
-                                {t('couch-cleaning')}
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="/services/carpet-cleaning">
-                                {t('carpet-cleaning')}
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="/services/upholstery-cleaning">
-                                {t('upholstery-cleaning')}
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="/services/leather-cleaning">
-                                {t('leather-cleaning')}
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="/services/mattress-cleaning">
-                                {t('mattress-cleaning')}
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="/services/car-cleaning">
-                                {t('car-cleaning')}
-                            </NavDropdown.Item>
+                            {SERVICES.map((service) => (
+                                <NavDropdown.Item
+                                    key={service.name}
+                                    href={service.link}
+                                >
+                                    {t(service.translationKey)}
+                                </NavDropdown.Item>
+                            ))}
                         </NavDropdown>
 
                         <Nav.Link href="/about">{t('navbar.about')}</Nav.Link>
