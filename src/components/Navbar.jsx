@@ -9,6 +9,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function CustomNavbar() {
     const { t } = useTranslation('translation');
+
     return (
         <>
             <Navbar bg="primary" variant="dark">
@@ -37,7 +38,10 @@ function CustomNavbar() {
                         </span>
                     </Navbar.Brand>
                     <Nav className="me-auto">
-                        <NavDropdown title={t('services')} id="nav-dropdown">
+                        <NavDropdown
+                            title={t('navbar.services')}
+                            id="nav-dropdown"
+                        >
                             <NavDropdown.Item href="/services/couch-cleaning">
                                 {t('couch-cleaning')}
                             </NavDropdown.Item>
@@ -58,12 +62,16 @@ function CustomNavbar() {
                             </NavDropdown.Item>
                         </NavDropdown>
 
-                        <Nav.Link href="/about">{t('about')}</Nav.Link>
-                        <Nav.Link href="/contacts">{t('contacts')}</Nav.Link>
-                        <Nav.Link href="/blog">{t('blog')}</Nav.Link>
-                        <Nav.Link href="/photos">{t('photos')}</Nav.Link>
-                        <Nav.Link href="/prices">{t('prices')}</Nav.Link>
-                        <Nav.Link href="/reviews">{t('reviews')}</Nav.Link>
+                        <Nav.Link href="/about">{t('navbar.about')}</Nav.Link>
+                        <Nav.Link href="/contacts">
+                            {t('navbar.contacts')}
+                        </Nav.Link>
+                        <Nav.Link href="/blog">{t('navbar.blog')}</Nav.Link>
+                        <Nav.Link href="/photos">{t('navbar.photos')}</Nav.Link>
+                        <Nav.Link href="/prices">{t('navbar.prices')}</Nav.Link>
+                        <Nav.Link href="/reviews">
+                            {t('navbar.reviews')}
+                        </Nav.Link>
                     </Nav>
                     <Navbar.Collapse className="justify-content-end">
                         <Navbar.Text>

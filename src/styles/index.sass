@@ -1,7 +1,55 @@
 @import "~bootstrap/scss/bootstrap"
 
+$navbar-height: 71px
+$page-height: calc(100vh - #{$navbar-height})
+
+.services-page
+    height: $page-height
+    background-image: url(../assets/images/main-couch.jpeg)
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    position: relative
+
+    .services-page-text-container
+        position: absolute
+        top: 40%
+        text-align: center
+        color: white
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: center
+        gap: 2rem
+        padding: 2% 10% 2% 10%
+        background: rgba(0, 0, 0, 0.7)
+
+        h1
+            font-size: 2.5rem
+
+            font-weight: 300
+            text-transform: uppercase
+            text-align: left
+
+        p
+            width: 70%
+            font-size: 1.2rem
+            font-weight: 400
+            letter-spacing: 2px
+            text-align: left
+
+        .services-page-text-container-buttons
+            display: flex
+            flex-direction: row
+            gap: 1.5rem
+            align-items: center
+            justify-content: center
+
+
+
+
 .couch-cleaning-container
-    height: calc(100vh - 71px)
+    height: $page-height
     background-image: url(../assets/images/blue-cushions-one-yellow-cushion.jpg)
     background-size: cover
     position: relative

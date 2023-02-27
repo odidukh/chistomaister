@@ -23,32 +23,31 @@ const router = createBrowserRouter([
         children: [
             {
                 path: 'services',
-                children: [
-                    {
-                        path: 'carpet-cleaning',
-                        element: <Services />,
-                    },
-                    {
-                        path: 'mattress-cleaning',
-                        element: <Services />,
-                    },
-                    {
-                        path: 'upholstery-cleaning',
-                        element: <Services />,
-                    },
-                    {
-                        path: 'car-cleaning',
-                        element: <Services />,
-                    },
-                    {
-                        path: 'couch-cleaning',
-                        element: <CouchCleaning />,
-                    },
-                    {
-                        path: 'leather-cleaning',
-                        element: <Services />,
-                    },
-                ],
+                element: <Services />,
+            },
+            {
+                path: 'services/carpet-cleaning',
+                element: <Services />,
+            },
+            {
+                path: 'services/mattress-cleaning',
+                element: <Services />,
+            },
+            {
+                path: 'services/upholstery-cleaning',
+                element: <Services />,
+            },
+            {
+                path: 'services/car-cleaning',
+                element: <Services />,
+            },
+            {
+                path: 'services/couch-cleaning',
+                element: <CouchCleaning />,
+            },
+            {
+                path: 'services/leather-cleaning',
+                element: <Services />,
             },
             {
                 path: '/about',

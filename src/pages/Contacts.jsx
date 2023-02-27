@@ -222,6 +222,7 @@ const Contacts = () => {
                     </div>
                 </div>
             </div>
+            
             <div className="social-networks-container">
                 <h1>{t('social_networks_header')}</h1>
                 <div className="social-networks">
