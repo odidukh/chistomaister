@@ -1,11 +1,15 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Services from './pages/Services';
 
 function App() {
+    const location = useLocation();
+    const displayServices = location.pathname === '/';
+
     return (
         <div className="App">
             <Navbar />
-            <Outlet />
+            {displayServices ? <Services /> : <Outlet />}
         </div>
     );
 }
