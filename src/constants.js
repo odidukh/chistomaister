@@ -18,3 +18,34 @@ export const COMPANY_INSTAGRAM_LINK =
 export const COMPANY_TELEGRAM_LINK = 'https://t.me/chistomaister';
 
 export const COMPANY_VIBER_LINK = `viber://contact?number=${COMPANY_PHONE_NUMBER_SIMPLIFIED}`;
+
+export const PRICE_LIST = {
+    upholstery: {
+        armchair: 500,
+        armchair_extended: 700,
+        couch_for_two: 1000,
+        couch_for_two_with_extended_part: 1200,
+        angle_couch: 1300,
+        angle_couch_with_extended_part: 1500,
+        chair: 300,
+        chair_armchair: 400,
+    },
+
+    mattress: {
+        child_1_side: 300,
+        child_2_sides: 500,
+        one_and_a_half_1_side: 400,
+        one_and_a_half_2_sides: 700,
+        two_1_side: 600,
+        two_2_sides: 1000,
+    },
+
+    car: {
+        cealing: 400,
+        seats: 1000,
+        floor: 700,
+        trunk: 500,
+        side_cards: 200,
+        whole_car: 2000,
+    }
+}

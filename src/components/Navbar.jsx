@@ -67,12 +67,12 @@ function CustomNavbar() {
                         <Nav.Link href="/contacts">
                             {t('navbar.contacts')}
                         </Nav.Link>
-                        <Nav.Link href="/blog">{t('navbar.blog')}</Nav.Link>
+                        {/* <Nav.Link href="/blog">{t('navbar.blog')}</Nav.Link> */}
                         <Nav.Link href="/photos">{t('navbar.photos')}</Nav.Link>
                         <Nav.Link href="/prices">{t('navbar.prices')}</Nav.Link>
-                        <Nav.Link href="/reviews">
+                        {/* <Nav.Link href="/reviews">
                             {t('navbar.reviews')}
-                        </Nav.Link>
+                        </Nav.Link> */}
                     </Nav>
                     <Navbar.Collapse className="justify-content-end">
                         <Navbar.Text>
