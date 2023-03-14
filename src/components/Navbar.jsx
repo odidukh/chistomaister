@@ -35,8 +35,15 @@ function CustomNavbar() {
 
     return (
         <>
-            <Navbar bg="primary" variant="dark" className="navbar">
-                <Container>
+            <Navbar
+                bg="primary"
+                variant="dark"
+                className="navbar"
+                expand="md"
+                collapseOnSelect
+            >
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
                     <Navbar.Brand href="/" className="navbar-brand">
                         <img
                             alt=""
@@ -84,7 +91,7 @@ function CustomNavbar() {
                             </a>
                         </Navbar.Text>
                     </Navbar.Collapse>
-                </Container>
+                </Navbar.Collapse>
             </Navbar>
         </>
     );
