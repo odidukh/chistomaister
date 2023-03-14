@@ -162,6 +162,7 @@ const resources = {
             social_networks_header: 'Ми у соціальних мережах',
 
             prices: {
+                main_header: 'Ціни на наші послуги',
                 table: {
                     column_1: 'Найменування',
                     column_2: 'Ціна',
