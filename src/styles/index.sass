@@ -4,6 +4,7 @@ $navbar-height: 71px
 $page-height: calc(100vh - #{$navbar-height})
 
 .navbar
+    
     .navbar-brand 
         display: flex
         flex-direction: row
@@ -155,28 +156,6 @@ $page-height: calc(100vh - #{$navbar-height})
             text-align: center
             margin: 1rem auto
 
-    .contact-form-container
-        .contact-buttons-group
-            display: flex
-            flex-direction: row
-            gap: 2rem
-            align-items: center
-            justify-content: center
-
-        h1
-            font-size: 2.5rem
-            font-weight: 500
-            text-transform: uppercase
-            text-align: center
-            margin: 2rem 0rem
-
-        .contact-form
-            display: flex
-            flex-direction: column
-            gap: 2rem
-            width: 70%
-            margin: 0 auto
-
     .contact-info-container
         h2
             font-size: 2.5rem
@@ -228,11 +207,40 @@ $page-height: calc(100vh - #{$navbar-height})
             align-items: center
             justify-content: center
 
+.contact-form-container
+    .contact-buttons-group
+        display: flex
+        flex-direction: row
+        gap: 2rem
+        align-items: center
+        justify-content: center
+
+    h1
+        font-size: 2.5rem
+        font-weight: 500
+        text-transform: uppercase
+        text-align: center
+        margin: 2rem 0rem
+
+    .contact-form
+        display: flex
+        flex-direction: column
+        gap: 2rem
+        width: 70%
+        margin: 0 auto
 
 // Price Page
 
+.price-page
+    height: $page-height
+    background: #F8F8FF
+    display: flex
+    flex-direction: column
+    gap: 3rem
+
 .price-page-header
     text-align: center
+    margin: 2rem 0rem
 
 .price-sections-container
     display: flex
@@ -250,7 +258,7 @@ $page-height: calc(100vh - #{$navbar-height})
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3)
 
     .price-section-header
-        background: #000
+        background: #6E63ED
         color: #fff
         padding: 1rem 0rem
         text-align: center
