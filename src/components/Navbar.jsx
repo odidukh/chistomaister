@@ -1,4 +1,3 @@
-import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import BrandIcon from '../assets/pictures/white_logo_transparent_background.png';
 import { COMPANY_NAME } from '../constants';
