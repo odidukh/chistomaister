@@ -5,6 +5,8 @@ import QuestionModal from '../components/QuestionModal';
 import useOrderModal from '../hooks/useOrderModal';
 import useQuestionModal from '../hooks/useQuestionModal';
 
+import { ReactComponent as ScrollDownSvg } from '../assets/svg/scroll-down-arrow.svg';
+
 const CarCleaning = () => {
     const { showOrderModal, handleOrderShow, handleOrderClose } =
         useOrderModal();
@@ -57,6 +59,8 @@ const CarCleaning = () => {
                 handleClose={handleQuestionClose}
                 handleSubmit={handleQuestionSubmit}
             />
+
+            <ScrollDownSvg />
         </div>
     );
 };
