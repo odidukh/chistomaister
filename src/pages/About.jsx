@@ -1,5 +1,6 @@
 import { Carousel } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
+import OrderComponent from '../components/OrderComponent';
 
 const About = () => {
     const { t } = useTranslation();
@@ -18,7 +19,7 @@ const About = () => {
                     <p className="about-page-technologies-description">
                         {t('about.equipment_description')}
                     </p>
-                    <Carousel>
+                    <Carousel variant="dark">
                         <Carousel.Item>
                             <img
                                 className="d-block carousel-image"
@@ -47,38 +48,38 @@ const About = () => {
                     <p className="about-page-technologies-description">
                         {t('about.chemicals_description')}
                     </p>
-                    <Carousel>
+                    <Carousel variant="dark">
                         <Carousel.Item>
                             <img
-                                className="d-block w-100"
-                                src="https://www.ikea.com/PIAimages/0452022_PE694202_S5.JPG"
-                                alt="First slide"
+                                className="d-block carousel-image"
+                                src="https://chemspec.com.ua/images/virtuemart/product/All_Fiber_Textile_Rinse_EU_Full_10.png"
+                                alt="Chemspec All Fiber Textile Rinse"
                             />
                             <Carousel.Caption>
-                                <h3>First slide label</h3>
-                                <p>
-                                    Nulla vitae elit libero, a pharetra augue
-                                    mollis interdum.
-                                </p>
+                                Chemspec All Fiber Textile Rinse
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
                             <img
-                                className="d-block w-100"
-                                src="https://www.ikea.com/PIAimages/0452022_PE694202_S5.JPG"
-                                alt="Second slide"
+                                className="d-block carousel-image"
+                                src="https://chemspec.com.ua/images/virtuemart/product/shot_12.jpg"
+                                alt="Enzall"
                             />
-                            <Carousel.Caption>
-                                <h3>Second slide label</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit.
-                                </p>
-                            </Carousel.Caption>
+                            <Carousel.Caption>Enzall</Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block carousel-image"
+                                src="https://s1.kaercher-media.com/products/62954900/main/1/d0.jpg"
+                                alt="Kärcher RM 769"
+                            />
+                            <Carousel.Caption>Kärcher RM 769</Carousel.Caption>
                         </Carousel.Item>
                     </Carousel>
                 </div>
             </div>
+
+            <OrderComponent />
         </div>
     );
 };

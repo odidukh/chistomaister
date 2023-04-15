@@ -14,6 +14,7 @@ import Reviews from './pages/Reviews';
 import NotFound from './pages/NotFound';
 import './i18n';
 import CouchCleaning from './pages/Services/CouchCleaning';
+import CarCleaning from './pages/CarCleaning';
 
 const router = createBrowserRouter([
     {
@@ -39,7 +40,7 @@ const router = createBrowserRouter([
             },
             {
                 path: 'services/car-cleaning',
-                element: <Services />,
+                element: <CarCleaning />,
             },
             {
                 path: 'services/couch-cleaning',

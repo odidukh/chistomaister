@@ -85,6 +85,18 @@ const resources = {
                 },
             },
 
+            // car cleaning
+            car_cleaning: {
+                header: 'Хімчистка авто',
+                description: `Детейлінг автомобіля.
+                    Якісно та з душею.
+                    Телефонуйте нам aбо замовте дзвінок, щоб дізнатися подробиці.`,
+                button: {
+                    order: 'Замовити',
+                    more: 'Детальніше',
+                },
+            },
+
             // about page
             about: {
                 header: 'Хто ми?',

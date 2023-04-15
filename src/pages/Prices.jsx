@@ -72,7 +72,7 @@ const Prices = () => {
                         <h2 className="price-section-header">
                             {t('prices.car_cleaning.header')}
                         </h2>
-                        <Table striped>
+                        <Table striped responsive>
                             <thead>
                                 <tr>
                                     <th>{t('prices.table.column_1')}</th>
