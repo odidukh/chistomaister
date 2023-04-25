@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.a23264a5.css",
-    "main.js": "/static/js/main.14ec3b11.js",
+    "main.css": "/static/css/main.45f567a0.css",
+    "main.js": "/static/js/main.ecd408c8.js",
     "static/js/787.9e25d05d.chunk.js": "/static/js/787.9e25d05d.chunk.js",
     "static/media/blue-cushions-one-yellow-cushion.jpg": "/static/media/blue-cushions-one-yellow-cushion.3baeb36b91630534a14a.jpg",
     "static/media/main-couch.jpeg": "/static/media/main-couch.b4e629649890f7690ec4.jpeg",
+    "static/media/car.jpeg": "/static/media/car.af6865e18500fa16d056.jpeg",
     "static/media/white_logo_transparent_background.png": "/static/media/white_logo_transparent_background.2b57045db929aab514d4.png",
     "index.html": "/index.html",
-    "main.a23264a5.css.map": "/static/css/main.a23264a5.css.map",
-    "main.14ec3b11.js.map": "/static/js/main.14ec3b11.js.map",
+    "static/media/scroll-down-arrow.svg": "/static/media/scroll-down-arrow.5e934855572b9b7e5f9d4d50e9a62e79.svg",
+    "main.45f567a0.css.map": "/static/css/main.45f567a0.css.map",
+    "main.ecd408c8.js.map": "/static/js/main.ecd408c8.js.map",
     "787.9e25d05d.chunk.js.map": "/static/js/787.9e25d05d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a23264a5.css",
-    "static/js/main.14ec3b11.js"
+    "static/css/main.45f567a0.css",
+    "static/js/main.ecd408c8.js"
   ]
 }
