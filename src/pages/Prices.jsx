@@ -14,7 +14,12 @@ const Prices = () => {
                         <h2 className="price-section-header">
                             {t('prices.furniture_cleaning.header')}
                         </h2>
-                        <Table striped>
+                        <table
+                            style={{
+                                tableLayout: 'auto',
+                                width: '100%',
+                            }}
+                        >
                             <thead>
                                 <tr>
                                     <th>{t('prices.table.column_1')}</th>
@@ -24,7 +29,9 @@ const Prices = () => {
                             <tbody>
                                 {Object.entries(PRICE_LIST.upholstery).map(
                                     ([key, value]) => (
-                                        <tr key={key}>
+                                        <tr
+                                            key={key}
+                                        >
                                             <td>
                                                 {t(
                                                     'prices.furniture_cleaning.type.' +
@@ -36,7 +43,7 @@ const Prices = () => {
                                     )
                                 )}
                             </tbody>
-                        </Table>
+                        </table>
                     </section>
 
                     <section className="price-section">
@@ -82,7 +89,14 @@ const Prices = () => {
                             <tbody>
                                 {Object.entries(PRICE_LIST.car).map(
                                     ([key, value]) => (
-                                        <tr key={key}>
+                                        <tr
+                                            key={key}
+                                            style={{
+                                                width: '400px',
+                                                // display: 'flex',
+                                                // justifyContent: 'space-between',
+                                            }}
+                                        >
                                             <td>
                                                 {t(
                                                     'prices.car_cleaning.type.' +
