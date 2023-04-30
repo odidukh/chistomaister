@@ -21,46 +21,54 @@ $page-height: calc(100vh - #{$navbar-height})
         transform: translateX(50%)
     
 .hero-section
-        height: $page-height
-        background-image: url(../assets/images/car.jpeg)
-        background-size: cover
-        background-position: center
-        background-repeat: no-repeat
-        position: relative
+    height: $page-height
+    background-image: url(../assets/images/car.jpeg)
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    position: relative
 
-        .hero-section-text-container
-            position: absolute
-            top: 40%
-            text-align: center
-            color: white
-            display: flex
-            flex-direction: column
-            align-items: flex-start
-            justify-content: center
-            gap: 2rem
-            padding: 2% 10% 2% 10%
-            background: rgba(0, 0, 0, 0.9)
+    .hero-section-text-container
+        position: absolute
+        top: 45%
+        text-align: center
+        color: white
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: center
+        gap: 2rem
+        padding: 2% 10% 2% 10%
+        background: rgba(0, 0, 0, 0.7)
+        margin-right: 10%
 
-            h1
-                font-size: 2.5rem
-                font-weight: 300
-                text-transform: uppercase
-                text-align: left
+        h1
+            font-size: 2.5rem
+            font-weight: 300
+            text-transform: uppercase
+            text-align: left
 
-            p
-                width: 70%
-                font-size: 1.2rem
-                font-weight: 400
-                letter-spacing: 2px
-                text-align: left
+        p
+            width: 70%
+            font-size: 1.2rem
+            font-weight: 400
+            letter-spacing: 2px
+            text-align: left
 
-            .hero-section-text-container-buttons
+        .order-buttons-container
+            .buttons-group
                 display: flex
                 flex-direction: row
                 gap: 1.5rem
                 align-items: center
-                justify-content: center 
+                justify-content: center
 
+            
+.mattress_cleaning
+    background-image: url(../assets/images/mattress-cleaning.jpeg)
+
+.car_cleaning
+    background-image: url(../assets/images/car.jpeg)
 
 .car-cleaning-page
     .car-cleaning-advantages

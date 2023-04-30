@@ -49,3 +49,30 @@ export const PRICE_LIST = {
         whole_car: 2000,
     }
 }
+
+export const SERVICES = [
+    {
+        id: crypto.randomUUID(),
+        name: 'couch-cleaning',
+        url: 'services/couch-cleaning',
+        background: 'couch-cleaning.jpg',
+    },
+    {
+        id: crypto.randomUUID(),
+        name: 'mattress-cleaning',
+        url: 'services/mattress-cleaning',
+        background: 'mattress-cleaning.jpg',
+    },
+    {
+        id: crypto.randomUUID(),
+        name: 'upholstery-cleaning',
+        url: 'services/upholstery-cleaning',
+        background: 'upholstery-cleaning.jpg',
+    },
+    {
+        id: crypto.randomUUID(),
+        name: 'car-cleaning',
+        url: 'services/car-cleaning',
+        background: 'car-cleaning.jpg',
+    },
+];

@@ -1,11 +1,11 @@
 import { Button } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
-import OrderModal from '../components/OrderModal';
-import QuestionModal from '../components/QuestionModal';
-import useOrderModal from '../hooks/useOrderModal';
-import useQuestionModal from '../hooks/useQuestionModal';
+import OrderModal from '../../components/OrderModal';
+import QuestionModal from '../../components/QuestionModal';
+import useOrderModal from '../../hooks/useOrderModal';
+import useQuestionModal from '../../hooks/useQuestionModal';
 
-import { ReactComponent as ScrollDownSvg } from '../assets/svg/scroll-down-arrow.svg';
+import { ReactComponent as ScrollDownSvg } from '../../assets/svg/scroll-down-arrow.svg';
 
 const CarCleaning = () => {
     const { showOrderModal, handleOrderShow, handleOrderClose } =
