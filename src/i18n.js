@@ -74,13 +74,6 @@ const resources = {
                 reviews: 'Відгуки',
             },
 
-            // main page
-            services: {
-                header: 'Бажаєте повернути своїм мʼягким меблям або салону авто оригінальну чистоту і свіжість?',
-                description: `Ми пропонуємо послуги мʼягких меблів, авто, матраців, диванів та шкіри.
-                    Використовуємо сучасні технології та засоби для чистки, щоб Ваші меблі і авто були чистими і свіжими.`,
-            },
-
             services: {
                 couch_cleaning: {
                     header: 'Хімчистка диванів',
@@ -209,12 +202,12 @@ const resources = {
             our_phone_number: 'Наш номер телефону',
             our_email_address: 'Наша електронна пошта',
 
-            question_button: 'Залишились питання?',
+            question_button: 'Є питання?',
             order_cleaning_button: 'Замовити',
             close_button: 'Закрити',
 
             order_cleaning_modal_header: 'Замовити хімчистку',
-            question_modal_header: 'Залишились питання?',
+            question_modal_header: 'Є питання?',
 
             social_networks_header: 'Ми у соціальних мережах',
 

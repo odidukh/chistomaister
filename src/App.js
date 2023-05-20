@@ -1,6 +1,6 @@
 import { Outlet, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Services from './pages/Services';
+import Home from './pages/Home';
 
 function App() {
     const location = useLocation();
@@ -9,7 +9,7 @@ function App() {
     return (
         <div className="App">
             <Navbar />
-            {displayServices ? <Services /> : <Outlet />}
+            {displayServices ? <Home /> : <Outlet />}
         </div>
     );
 }

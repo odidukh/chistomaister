@@ -8,7 +8,7 @@ import About from './pages/About';
 import Contacts from './pages/Contacts';
 import Blog from './pages/Blog';
 import Photos from './pages/Photos';
-import Services from './pages/Services';
+import Home from './pages/Home';
 import Prices from './pages/Prices';
 import Reviews from './pages/Reviews';
 import NotFound from './pages/NotFound';
@@ -16,6 +16,7 @@ import './i18n';
 import CouchCleaning from './pages/Services/CouchCleaning';
 import CarCleaning from './pages/Services/CarCleaning';
 import MattressCleaning from './pages/Services/MattressCleaning';
+import UpholsteryCleaning from './pages/Services/UpholsteryCleaning';
 
 const router = createBrowserRouter([
     {
@@ -24,8 +25,8 @@ const router = createBrowserRouter([
         errorElement: <NotFound />,
         children: [
             {
-                path: 'services',
-                element: <Services />,
+                path: 'home',
+                element: <Home />,
             },
             {
                 path: 'services/mattress-cleaning',
@@ -33,7 +34,7 @@ const router = createBrowserRouter([
             },
             {
                 path: 'services/upholstery-cleaning',
-                element: <Services />,
+                element: <UpholsteryCleaning />,
             },
             {
                 path: 'services/car-cleaning',
@@ -43,10 +44,10 @@ const router = createBrowserRouter([
                 path: 'services/couch-cleaning',
                 element: <CouchCleaning />,
             },
-            {
-                path: 'services/leather-cleaning',
-                element: <Services />,
-            },
+            // {
+            //     path: 'services/leather-cleaning',
+            //     element: <Services />,
+            // },
             {
                 path: '/about',
                 element: <About />,
